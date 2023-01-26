@@ -6,7 +6,7 @@ class Politiker:
         self.parti = parti
 
 
-    def return_iq(self):
+    def hent_iq(self):
         self.iq = 100
         if self.parti == "Høyre":
             self.iq = self.iq*1.5
@@ -32,16 +32,16 @@ class Politiker:
         return self.iq
 
 
-    def return_verdi(self):
+    def hent_verdi(self):
         self.verdi = 10000*randint(0.5, 5)
         self.verdi = self.verdi*self.iq
         return self.verdi
 
     
-    def return_navn(self):
+    def hent_navn(self):
         return self.navn
 
     
-    def return_parti(self):
+    def hent_parti(self):
         return self.parti
    

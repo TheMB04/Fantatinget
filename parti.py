@@ -19,6 +19,10 @@ class Parti:
         return poeng
 
 
+    def hent_mitt_parti(self):
+        pass
+
+
 
 overskrifter = 0
 
