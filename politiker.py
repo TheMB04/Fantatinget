@@ -39,6 +39,14 @@ class Politiker:
         self.verdi = self.verdi*self.iq
         return self.verdi
 
+    
+    def return_navn(self):
+        return self.navn
+
+    
+    def return_parti(self):
+        return self.parti
+
 
 
 fil = open("politikere.json", encoding="utf-8")
