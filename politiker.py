@@ -28,9 +28,7 @@ class Politiker:
             self.iq = self.iq*0.7
         elif self.parti == "Sosialistisk Venstreparti":
             self.iq = self.iq*0.01
-        else:
-            self.iq = self.iq*-1
-        
+       
         return self.iq
 
 
