@@ -20,5 +20,5 @@ class Parti:
 
     def hent_mitt_parti(self):
         for politiker in self.mine_politikere:
-            print(f"{politiker.hent_navn()} - Parti: {politiker.hent_parti()} Verdi: {politiker.hent_verdi()} Iq: {politiker.hent_iq()}")
+            print(f"{politiker.hent_navn()} - Parti: {politiker.hent_parti()} | Verdi: {politiker.hent_verdi()} | Iq: {politiker.hent_iq()}")
 
