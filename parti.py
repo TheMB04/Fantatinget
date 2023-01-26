@@ -1,5 +1,4 @@
 from politiker import Politiker
-import json
 
 class Parti:
     def __init__(self, navn, mine_politikere):
@@ -9,8 +8,8 @@ class Parti:
 
     def parti_verdi(self):
         self.verdi = 0
-        for min_politiker in self.mine_politikere:
-            self.verdi += min_politiker.return_verdi()
+        for politiker in self.mine_politikere:
+            self.verdi += politiker.return_verdi()
         return self.verdi
 
 
@@ -20,5 +19,6 @@ class Parti:
 
 
     def hent_mitt_parti(self):
-        pass  
+        for politiker in self.mine_politikere:
+            print(f"{politiker.hent_navn()} - Parti: {politiker.hent_parti()} Verdi: {politiker.hent_verdi()} Iq: {politiker.hent_iq()}")
 
