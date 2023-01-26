@@ -1,4 +1,5 @@
 import json
+from random import randint
 
 class Politiker:
     def __init__(self, navn, parti):
@@ -35,7 +36,7 @@ class Politiker:
 
 
     def return_verdi(self):
-        self.verdi = 30000
+        self.verdi = 10000*randint(0.5, 5)
         self.verdi = self.verdi*self.iq
         return self.verdi
 
