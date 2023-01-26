@@ -2,19 +2,21 @@ from politiker import Politiker
 import json
 
 class Parti:
-     def __init__(self, verdi, overskrifter):
+    def __init__(self, verdi, overskrifter):
         self.verdi = verdi
         self.overskrifter = overskrifter
 
 
+    def parti_verdi(self):
+        verdi = politiker[]
+        return(verdi)
 
-def parti_verdi(self):
-    verdi = politiker[]
-    return(verdi)
-    
-def hent_poeng(self):
-    poeng = overskrifter
-    return(poeng)
+
+    def hent_poeng(self):
+        poeng = overskrifter
+        return(poeng)
+
+
 
 fil = open("politikere.json", encoding="utf-8")
 politikere = json.load(fil)
