@@ -2,14 +2,16 @@ from politiker import Politiker
 import json
 
 class Parti:
-    def __init__(self, navn, overskrifter, alle_politikere):
+    def __init__(self, navn, mine_politikere):
         self.navn = navn
-        self.overskrifter = overskrifter
+        self.mine_politikere = mine_politikere
 
 
     def parti_verdi(self):
-        verdi = politiker[]
-        return verdi
+        self.verdi = 0
+        for i in self.mine_politikere:
+            self.verdi += i.return_verdi()
+        return self.verdi
 
 
     def hent_poeng(self):
@@ -25,9 +27,10 @@ politikere = json.load(fil)
 fil.close()
 
 alle_politikere = []
+mine_politikere = []
 
 for i in range(0, len(politikere["representanter_oversikt"]["representanter_liste"]["representant"])):
     politiker = Politiker((politikere["representanter_oversikt"]["representanter_liste"]["representant"][i]["fornavn"] + politikere["representanter_oversikt"]["representanter_liste"]["representant"][i]["etternavn"]), politikere["representanter_oversikt"]["representanter_liste"]["representant"][i]["parti"]["navn"])
     alle_politikere.append(politiker)   
 
-mitt_parti = Parti(input("Hva skal partiet ditt hete?"), overskrifter, alle_politikere)
+mitt_parti = Parti(input("Hva skal partiet ditt hete?"), mine_politikere)
