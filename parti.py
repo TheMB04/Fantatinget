@@ -30,4 +30,4 @@ for i in range(0, len(politikere["representanter_oversikt"]["representanter_list
     politiker = Politiker((politikere["representanter_oversikt"]["representanter_liste"]["representant"][i]["fornavn"] + politikere["representanter_oversikt"]["representanter_liste"]["representant"][i]["etternavn"]), politikere["representanter_oversikt"]["representanter_liste"]["representant"][i]["parti"]["navn"])
     alle_politikere.append(politiker)   
 
-mitt_parti = Parti(input("Hva skal partiet ditt hete?"), overskrifter)
+mitt_parti = Parti(input("Hva skal partiet ditt hete?"), overskrifter, alle_politikere)
