@@ -17,8 +17,9 @@ class Bruker:
         pass
 
     def ny_bruker(self, brukernavn, passord, epost):
-        bruker = 
-        self._brukere.append(bruker)
+        pass
+        #bruker = 
+        #self._brukere.append(bruker)
 
 
 

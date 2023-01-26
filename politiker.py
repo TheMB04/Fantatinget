@@ -33,8 +33,8 @@ class Politiker:
 
 
     def hent_verdi(self):
-        self.verdi = 10000*randint(0.5, 5)
-        self.verdi = self.verdi*self.iq
+        self.verdi = 10000*randint(1, 5)
+        self.verdi = self.verdi*self.hent_iq()
         return self.verdi
 
     
