@@ -9,8 +9,8 @@ class Parti:
 
     def parti_verdi(self):
         self.verdi = 0
-        for i in self.mine_politikere:
-            self.verdi += i.return_verdi()
+        for min_politiker in self.mine_politikere:
+            self.verdi += min_politiker.return_verdi()
         return self.verdi
 
 
