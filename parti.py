@@ -18,6 +18,8 @@ class Parti:
 
 
 
+overskrifter = 0
+
 fil = open("politikere.json", encoding="utf-8")
 politikere = json.load(fil)
 fil.close()
@@ -28,4 +30,4 @@ for i in range(0, len(politikere["representanter_oversikt"]["representanter_list
     politiker = Politiker((politikere["representanter_oversikt"]["representanter_liste"]["representant"][i]["fornavn"] + politikere["representanter_oversikt"]["representanter_liste"]["representant"][i]["etternavn"]), politikere["representanter_oversikt"]["representanter_liste"]["representant"][i]["parti"]["navn"])
     alle_politikere.append(politiker)   
 
-Høyre = Parti("Høyre", 0, alle_politikere)
+mitt_parti = Parti(input("Hva skal partiet ditt hete?"), overskrifter)
