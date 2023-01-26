@@ -1,3 +1,4 @@
+
 class Verden:
     def __init__(self):
         self._politikere = []
@@ -5,7 +6,6 @@ class Verden:
 
     def finn_politikere(self, navn):
         pass
-
     def finn_lag(self, navn):
         pass
     
